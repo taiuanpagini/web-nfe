@@ -74,53 +74,53 @@ class VerticalLayout extends PureComponent {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    let {
-      location: { pathname },
-      app: {
-        customizer: { theme, sidebarCollapsed }
-      }
-    } = this.props
+    // let {
+    //   location: { pathname },
+    //   app: {
+    //     customizer: { theme, sidebarCollapsed }
+    //   }
+    // } = this.props
 
-    let layout = theme
-    if (this.mounted) {
-      if (layout === "dark") {
-        document.body.classList.remove("semi-dark-layout")
-        document.body.classList.add("dark-layout")
-      }
-      if (layout === "semi-dark") {
-        document.body.classList.remove("dark-layout")
-        document.body.classList.add("semi-dark-layout")
-      }
-      if (layout !== "dark" && layout !== "semi-dark") {
-        document.body.classList.remove("dark-layout", "semi-dark-layout")
-      }
+    // let layout = theme
+    // if (this.mounted) {
+    //   if (layout === "dark") {
+    //     document.body.classList.remove("semi-dark-layout")
+    //     document.body.classList.add("dark-layout")
+    //   }
+    //   if (layout === "semi-dark") {
+    //     document.body.classList.remove("dark-layout")
+    //     document.body.classList.add("semi-dark-layout")
+    //   }
+    //   if (layout !== "dark" && layout !== "semi-dark") {
+    //     document.body.classList.remove("dark-layout", "semi-dark-layout")
+    //   }
 
-      if (
-        prevProps.app.customizer.sidebarCollapsed !==
-        this.props.app.customizer.sidebarCollapsed
-      ) {
-        this.setState({
-          collapsedContent: sidebarCollapsed,
-          sidebarState: sidebarCollapsed
-        })
-      }
-      if (
-        prevProps.app.customizer.sidebarCollapsed ===
-          this.props.app.customizer.sidebarCollapsed &&
-        pathname !== prevProps.location.pathname &&
-        this.collapsedPaths.includes(pathname)
-      ) {
-        this.props.collapseSidebar(true)
-      }
-      if (
-        prevProps.app.customizer.sidebarCollapsed ===
-          this.props.app.customizer.sidebarCollapsed &&
-        pathname !== prevProps.location.pathname &&
-        !this.collapsedPaths.includes(pathname)
-      ) {
-        this.props.collapseSidebar(false)
-      }
-    }
+    //   if (
+    //     prevProps.app.customizer.sidebarCollapsed !==
+    //     this.props.app.customizer.sidebarCollapsed
+    //   ) {
+    //     this.setState({
+    //       collapsedContent: sidebarCollapsed,
+    //       sidebarState: sidebarCollapsed
+    //     })
+    //   }
+    //   if (
+    //     prevProps.app.customizer.sidebarCollapsed ===
+    //       this.props.app.customizer.sidebarCollapsed &&
+    //     pathname !== prevProps.location.pathname &&
+    //     this.collapsedPaths.includes(pathname)
+    //   ) {
+    //     this.props.collapseSidebar(true)
+    //   }
+    //   if (
+    //     prevProps.app.customizer.sidebarCollapsed ===
+    //       this.props.app.customizer.sidebarCollapsed &&
+    //     pathname !== prevProps.location.pathname &&
+    //     !this.collapsedPaths.includes(pathname)
+    //   ) {
+    //     this.props.collapseSidebar(false)
+    //   }
+    // }
   }
 
   handleCollapsedMenuPaths = item => {

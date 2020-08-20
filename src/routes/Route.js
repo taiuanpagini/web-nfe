@@ -3,6 +3,7 @@ import React, { Suspense } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { Spinner } from 'reactstrap';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { ContextLayout } from '../utility/context/Layout';
 import { store } from '~/redux/storeConfig/store';
 

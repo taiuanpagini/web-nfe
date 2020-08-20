@@ -162,7 +162,7 @@ updateScroll = () => {
           "navbar-sticky": customizerProps.navbarType === "sticky",
           "navbar-floating": customizerProps.navbarType === "floating" || !navbarTypeArr.includes(customizerProps.navbarType),
           "navbar-hidden": customizerProps.navbarType === "hidden",
-          "theme-primary": !menuThemeArr.includes(customizerProps.menuTheme)          
+          "theme-primary": !menuThemeArr.includes(customizerProps.menuTheme)
         })}
       >
         <Sidebar

@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import { Disc, X, Circle } from "react-feather";
-import classnames from "classnames";
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Disc, X, Circle } from 'react-feather';
+import classnames from 'classnames';
 
 class SidebarHeader extends Component {
   render() {
@@ -19,26 +19,26 @@ class SidebarHeader extends Component {
           <li className="nav-item mr-auto">
             <NavLink to="/" className="navbar-brand">
               <div className="brand-logo" />
-              <h2 className="brand-text mb-0">Vuexy</h2>
+              <h2 className="brand-text mb-0">NFCer</h2>
             </NavLink>
           </li>
           <li className="nav-item nav-toggle">
             <div className="nav-link modern-nav-toggle">
-              {collapsed === false ? (
+              {/* {collapsed === false ? (
                 <Disc
                   onClick={() => {
                     toggleSidebarMenu(true);
                     toggle();
                   }}
                   className={classnames(
-                    "toggle-icon icon-x d-none d-xl-block font-medium-4",
+                    'toggle-icon icon-x d-none d-xl-block font-medium-4',
                     {
-                      "text-primary": activeTheme === "primary",
-                      "text-success": activeTheme === "success",
-                      "text-danger": activeTheme === "danger",
-                      "text-info": activeTheme === "info",
-                      "text-warning": activeTheme === "warning",
-                      "text-dark": activeTheme === "dark",
+                      'text-primary': activeTheme === 'primary',
+                      'text-success': activeTheme === 'success',
+                      'text-danger': activeTheme === 'danger',
+                      'text-info': activeTheme === 'info',
+                      'text-warning': activeTheme === 'warning',
+                      'text-dark': activeTheme === 'dark',
                     }
                   )}
                   size={20}
@@ -51,30 +51,30 @@ class SidebarHeader extends Component {
                     toggle();
                   }}
                   className={classnames(
-                    "toggle-icon icon-x d-none d-xl-block font-medium-4",
+                    'toggle-icon icon-x d-none d-xl-block font-medium-4',
                     {
-                      "text-primary": activeTheme === "primary",
-                      "text-success": activeTheme === "success",
-                      "text-danger": activeTheme === "danger",
-                      "text-info": activeTheme === "info",
-                      "text-warning": activeTheme === "warning",
-                      "text-dark": activeTheme === "dark",
+                      'text-primary': activeTheme === 'primary',
+                      'text-success': activeTheme === 'success',
+                      'text-danger': activeTheme === 'danger',
+                      'text-info': activeTheme === 'info',
+                      'text-warning': activeTheme === 'warning',
+                      'text-dark': activeTheme === 'dark',
                     }
                   )}
                   size={20}
                 />
-              )}
+              )} */}
               <X
                 onClick={sidebarVisibility}
                 className={classnames(
-                  "toggle-icon icon-x d-block d-xl-none font-medium-4",
+                  'toggle-icon icon-x d-block d-xl-none font-medium-4',
                   {
-                    "text-primary": activeTheme === "primary",
-                    "text-success": activeTheme === "success",
-                    "text-danger": activeTheme === "danger",
-                    "text-info": activeTheme === "info",
-                    "text-warning": activeTheme === "warning",
-                    "text-dark": activeTheme === "dark",
+                    'text-primary': activeTheme === 'primary',
+                    'text-success': activeTheme === 'success',
+                    'text-danger': activeTheme === 'danger',
+                    'text-info': activeTheme === 'info',
+                    'text-warning': activeTheme === 'warning',
+                    'text-dark': activeTheme === 'dark',
                   }
                 )}
                 size={20}
@@ -83,8 +83,8 @@ class SidebarHeader extends Component {
           </li>
         </ul>
         <div
-          className={classnames("shadow-bottom", {
-            "d-none": menuShadow === false,
+          className={classnames('shadow-bottom', {
+            'd-none': menuShadow === false,
           })}
         />
       </div>

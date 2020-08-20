@@ -57,8 +57,6 @@ export default function NavbarUser() {
   const [navbarSearch, setNavbarSearch] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
 
-  console.tron.log(profile);
-
   // componentDidMount() {
   //   axios.get("/api/main-search/data").then(({ data }) => {
   //     this.setState({ suggestions: data.searchResult })

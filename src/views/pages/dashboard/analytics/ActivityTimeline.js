@@ -1,6 +1,6 @@
-import React from "react"
-import { Card, CardHeader, CardTitle, CardBody } from "reactstrap"
-import { Plus, AlertCircle, Check } from "react-feather"
+import React from 'react';
+import { Card, CardHeader, CardTitle, CardBody } from 'reactstrap';
+import { Plus, AlertCircle, Check } from 'react-feather';
 
 class ActivityTimeline extends React.Component {
   render() {
@@ -72,7 +72,7 @@ class ActivityTimeline extends React.Component {
           </ul>
         </CardBody>
       </Card>
-    )
+    );
   }
 }
-export default ActivityTimeline
+export default ActivityTimeline;
